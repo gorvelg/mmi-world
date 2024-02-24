@@ -9,26 +9,48 @@ const props = defineProps({
         type : String,
         required: true
     },
+    population: {
+        type : String,
+        required: true
+    },
+    superficie: {
+        type : String,
+        required: true
+    },
+    continent: {
+        type : String,
+        required: true
+    
+    }
 })
 </script>
 <template>
     <div class="card">
         <h1>{{ name }}</h1>
         <p>Capitale : {{ capitale }}</p>
+        <p>Population : {{ population }}</p>
+        <p>Superficie : {{ superficie }}</p>
+        <p>Continent : {{ continent }}</p>
     </div>
 </template>
 
 <style scoped>
     .card {
         border: 1px solid #000;
-        padding: 10px;
-        margin: 10px;
-        width: 200px;
+        background-color: #fff;
+        color: #242424;
+        border-radius: 16px;
+        padding: 16px;
+        width: 100%;
+        max-width: 600px;
     }
-    h1 {
-        font-size: 20px;
+    .card h1 {
+        text-align: center;
+        margin: 0;
     }
-    p {
-        font-size: 16px;
-    }
+
+             
+
+         
+  
 </style>
