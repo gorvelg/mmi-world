@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/pays/:id',
       component: () => import('@/views/FichePays.vue'),
       name: 'fichePays'
+    },
+    {
+      path: '/rechercher',
+      component: () => import('@/views/Recherche.vue'),
+      name: 'rechercher'
     }
   ]
 })

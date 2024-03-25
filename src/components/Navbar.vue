@@ -10,6 +10,9 @@
             <li>
                 <RouterLink :to="{name: 'pays'}">Pays</RouterLink>
             </li>
+            <li>
+                <RouterLink :to="{name: 'rechercher'}">Recherche</RouterLink>
+            </li>
         </ul>
     </nav>
 </template>
@@ -25,5 +28,9 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+a {
+    color: #fff;
 }
 </style>
